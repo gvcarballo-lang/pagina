@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sekiro Wiki – Inicio</title>
+  <style>
+    body {
+  background-color: #1b1b1b !important;
+}
+    :root {
+  --bg-image: url("images/b87b2a975b2119556f33546f3f5cc8ff.jpg");  /* coloca b87b2a975b2119556f33546f3f5cc8ff.jpg dentro de /images */
+  --card-bg-image: url("images/fondo-cuadro.jpg");
+  --color-white: #ffffff;
+  --color-brown: #3f2a1c;
+  --color-text: #ffffff;
+  --max-width: 900px;
+}
+
+body {
+  background: var(--bg-image) center/cover no-repeat fixed;
+}
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg-image) center/cover no-repeat fixed;
+      color: var(--color-text);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background-image: var(--card-bg-image);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.6); /* Mejora contraste */
+      backdrop-filter: blur(2px);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+      max-width: var(--max-width);
+      width: 100%;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: inline-flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-white);
+    }
+
+    nav ul li:not(:last-child)::after {
+      content: "•";
+      margin-left: 0.5rem;
+      color: var(--color-white);
+    }
+
+    nav ul li a {
+      color: var(--color-white);
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-title {
+      font-family: serif;
+      font-size: 3rem;
+      color: var(--color-white);
+      line-height: 1;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.1em;
+    }
+
+    .wiki-tagline {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-white);
+      margin-bottom: 2rem;
+    }
+
+    .intro h3 {
+      font-size: 1.5rem;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+
+    .intro h4 {
+      font-size: 1.1rem;
+      color: var(--color-white);
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      max-width: var(--max-width);
+      margin: 0.5rem auto;
+      line-height: 1.6;
+    }
+
+    .personajes {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    .personajes .section-title {
+      display: inline-block;
+      background-color: var(--color-brown);
+      color: var(--color-white);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+
+    .characters figure {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 0.5rem;
+      border-radius: 4px;
+      color: var(--color-white);
+    }
+
+    .characters img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .characters figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <nav>
+      <ul>
+        <li><a href="pagina.html">Inicio</a></li>
+        <li><a href="sekiro.html">Sekiro</a></li>
+        <li><a href="contenido.html">Contenido</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="hero-title">SEKIRO</h1>
+    <h2 class="hero-subtitle">SHADOWS DIE TWICE</h2>
+    <p class="wiki-tagline">Sekiro Wiki</p>
+
+    <section class="intro">
+      <h3>Inicio</h3>
+      <h4>Bienvenido a Sekiro Wiki</h4>
+      <p>Sekiro: Shadows Die Twice es un videojuego de acción-aventura desarrollado por FromSoftware y publicado por Activision. Dirigido por Hidetaka Miyazaki, su fecha de estreno fue el 22 de marzo de 2019 para PlayStation 4, Xbox One y Microsoft Windows.</p>
+      <p>Protagonizado por un shinobi llamado Sekiro, cuya intención es rescatar a su señor secuestrado y vengarse de sus enemigos. Ambientado en los últimos años del periodo Sengoku, ofrece exploración vertical, mecánicas de sigilo y combates precisos.</p>
+    </section>
+
+    <section class="personajes">
+      <h3 class="section-title">Personajes</h3>
+      <div class="characters">
+        <figure>
+          <img src="C:\Users\gvcar\Documents\JAVI\img\Sekiro-MP.jpg" alt="Sekiro"/>
+          <figcaption>Sekiro</figcaption>
+        </figure>
+        <figure>
+          <img src="C:\Users\gvcar\Documents\JAVI\img\Escultor-MP.jpg" alt="El Búho"/>
+          <figcaption>El Búho</figcaption>
+        </figure>
+        <figure>
+          <img src="C:\Users\gvcar\Documents\JAVI\img\Divine_Heir-MP.jpg" alt="El Descendiente Celestial"/>
+          <figcaption>El Descendiente Celestial</figcaption>
+        </figure>
+        <figure>
+          <img src="C:\Users\gvcar\Documents\JAVI\img\Ashina_Clan_Commander-MP.jpg" alt="Genichiro Ashina"/>
+          <figcaption>Genichiro Ashina</figcaption>
+        </figure>
+        <figure>
+          <img src="C:\Users\gvcar\Documents\JAVI\img\Isshin-MP.jpg" alt="Isshin Ashina"/>
+          <figcaption>Isshin Ashina</figcaption>
+        </figure>
+      </div>
+    </section>
+  </div>
+  
+</body>
+</html>
