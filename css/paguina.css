@@ -1,0 +1,150 @@
+
+body {
+  background-color: #1b1b1b !important;
+}
+
+
+    /* Menú de navegación */
+    nav {
+      background-color: #2d3436;
+      color: rgb(255, 253, 253);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #00cec9;
+    }
+    
+
+    /* Contenedor de tarjetas */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    /* Tarjeta de juego */
+    .card {
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+       .card-img {
+       width: 100%;
+      height: 100%;
+       object-fit: cover;
+      }
+
+    .card-info {
+      padding: 15px;
+    }
+
+    .card-info h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    .card-info .price {
+      color: #35808a;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* Información emergente al pasar el cursor */
+    .hover-details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.85);
+      color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card:hover .hover-details {
+      opacity: 1;
+    }
+
+.mi-carousel {
+  max-width: 1600px; /* ancho deseado */
+  height: 450px;    /* alto deseado */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.fixed-alert {
+  width: 1300px;           
+  height: 50px;           
+  display: flex;
+  align-items: center;
+  padding: 0 16px;        /* espacio interno sin agrandar el alert */
+  overflow: hidden;       /* oculta el texto fuera del rectángulo */
+  white-space: nowrap;    /* evita salto de línea del texto */
+}
+
+.alert-moving.marquee {
+  display: inline-block;
+  padding-left: 100%;     /* espacio inicial para empezar fuera a la derecha */
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.btn-wrapper {
+  text-align: center;
+  margin: 0,1px 0;    /* 50px arriba y abajo: modifica para subir o bajar */
+}
+
+.btn-examen {
+  display: inline-block;
+  padding: 15px 30px;    /* agranda el botón: ajusta para cambiar tamaño */
+  font-size: 1.2em;
+  background-color: #373838;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+
+.btn-examen:hover {
+  background-color: #4b4a4a;
+  transform: translateY(-2px);
+}
+
+

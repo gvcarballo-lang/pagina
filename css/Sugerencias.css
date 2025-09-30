@@ -1,0 +1,41 @@
+body {
+  background-color: #1b1b1b !important;
+}
+
+
+    /* Menú de navegación */
+    nav {
+      background-color: #2d3436;
+      color: rgb(255, 253, 253);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #00cec9;
+    }
+    
+    /*----------------
+/* Carrusel centrado */
+.mi-carousel, #carouselGames {
+  max-width: 1600px;
+  margin: 0 auto;     /* centra en la página */
+  height: 450px;
+  overflow: hidden;
+}
+

@@ -1,0 +1,110 @@
+
+body {
+  background-color: #1b1b1b !important;
+}
+
+
+    /* Menú de navegación */
+    nav {
+      background-color: #2d3436;
+      color: rgb(255, 253, 253);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #00cec9;
+    }
+    
+
+    /* Contenedor de tarjetas */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    /* Tarjeta de juego */
+    .card {
+      background: rgb(0, 0, 0);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgb(59, 59, 59);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+       .card-img {
+       width: 100%;
+      height: 100%;
+       object-fit: cover;
+      }
+
+    .card-info {
+      padding: 15px;
+    }
+
+    .card-info h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    .card-info .price {
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* Información emergente al pasar el cursor */
+    .hover-details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.85);
+      color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card:hover .hover-details {
+      opacity: 1;
+    }
+
+.mi-carousel {
+  max-width: 1600px; /* ancho deseado */
+  height: 450px;    /* alto deseado */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.card-info h3,
+.card-info .price,
+.hover-details p,
+nav ul li {
+  color: white !important;
+}
